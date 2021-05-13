@@ -17,8 +17,16 @@ Tested on Creality Ender3 V2 Stock Firmware V1.0.2
 
 #### Other inclusions
 
-- A bed leveling test 3mf file with a GCode sliced in PrusaSlicer.
+- A bed leveling test stl file.
 - A standalone bed and nozzle cleanup script.
+
+
+#### Usage
+
+- Run the `e3v2_bed_level.gcode` before you print.
+- If you just wish to clean the bed and nozzle, run the `e3v2_cleanup.gcode`.
+- You can also generate a gcode of the `e3v2_bed_level_test.stl` to run a
+  ~4min leveling test on all 5 points of the bed.
 
 
 #### Known Issues
