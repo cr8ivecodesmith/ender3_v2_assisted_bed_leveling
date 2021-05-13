@@ -10,8 +10,6 @@
 ; - When a pause (M25) is triggered, you will need to move the cursor to see
 ;   the updated menu.
 ;   See: https://forums.creality3dofficial.com/community/postid/156/
-; - Duplicate all codes within the [Bed level step - Calibration] section if
-;   you need more calibration repetitions.
 ; 
 ; 
 ; 
