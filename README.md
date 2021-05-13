@@ -14,8 +14,11 @@ It does the ff. steps:
 
 Tested on Creality Ender3 V2 Stock Firmware V1.0.2
 
-A bed leveling test 3mf file is also included with a GCode sliced in
-PrusaSlicer.
+
+#### Other inclusions
+
+- A bed leveling test 3mf file with a GCode sliced in PrusaSlicer.
+- A standalone bed and nozzle cleanup script.
 
 
 #### Known Issues
