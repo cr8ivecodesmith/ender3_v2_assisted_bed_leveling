@@ -21,10 +21,10 @@
 ; 
 G90
 G28
-M140 S45 ; Set Print Bed Temperature
-M104 S140 T0 ; Set Extruder Temperature
-M190 S45 ; Waiting for Bed Temperature
-M109 S140 T0 ; Waiting for Extruder Temperature
+M140 S60 ; Set Print Bed Temperature
+M104 S160 T0 ; Set Extruder Temperature
+M190 S60 ; Waiting for Bed Temperature
+M109 S160 T0 ; Waiting for Extruder Temperature
 M400
 M300 S440 P100
 ; 
@@ -40,14 +40,14 @@ M300 S440 P100
 M400
 ;
 ; 
-; ========================
-; Bed level step - Initial
-; ========================
+; ============================
+; Bed level step - Calibration
+; ============================
 ; 
 ; Position 1
 M25
 G0 Z5
-G0 X30 Y30 F3000
+G0 X32 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -55,7 +55,7 @@ M400
 ; Position 2
 M25
 G0 Z5
-G0 X30 Y205 F3000
+G0 X32 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -63,7 +63,7 @@ M400
 ; Position 3
 M25
 G0 Z5
-G0 X205 Y205 F3000
+G0 X202 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -71,7 +71,7 @@ M400
 ; Position 4
 M25
 G0 Z5
-G0 X205 Y30 F3000
+G0 X202 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -92,7 +92,7 @@ M400
 ; Position 1
 M25
 G0 Z5
-G0 X30 Y30 F3000
+G0 X32 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -100,7 +100,7 @@ M400
 ; Position 2
 M25
 G0 Z5
-G0 X30 Y205 F3000
+G0 X32 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -108,7 +108,7 @@ M400
 ; Position 3
 M25
 G0 Z5
-G0 X205 Y205 F3000
+G0 X202 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -116,7 +116,7 @@ M400
 ; Position 4
 M25
 G0 Z5
-G0 X205 Y30 F3000
+G0 X202 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -130,14 +130,14 @@ M300 S440 P100
 M400
 ; 
 ; 
-; ======================
-; Bed level step - Final
-; ======================
+; ============================
+; Bed level step - Calibration
+; ============================
 ; 
 ; Position 1
 M25
 G0 Z5
-G0 X30 Y30 F3000
+G0 X32 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -145,7 +145,7 @@ M400
 ; Position 2
 M25
 G0 Z5
-G0 X30 Y205 F3000
+G0 X32 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -153,7 +153,7 @@ M400
 ; Position 3
 M25
 G0 Z5
-G0 X205 Y205 F3000
+G0 X202 Y202 F3000
 G0 Z0
 M300 S440 P100
 M400
@@ -161,7 +161,97 @@ M400
 ; Position 4
 M25
 G0 Z5
-G0 X205 Y30 F3000
+G0 X202 Y32 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 5
+M25
+G0 Z5
+G0 X117.5 Y117.5 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; 
+; ============================
+; Bed level step - Calibration
+; ============================
+; 
+; Position 1
+M25
+G0 Z5
+G0 X32 Y32 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 2
+M25
+G0 Z5
+G0 X32 Y202 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 3
+M25
+G0 Z5
+G0 X202 Y202 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 4
+M25
+G0 Z5
+G0 X202 Y32 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 5
+M25
+G0 Z5
+G0 X117.5 Y117.5 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; 
+; ============================
+; Bed level step - Calibration
+; ============================
+; 
+; Position 1
+M25
+G0 Z5
+G0 X32 Y32 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 2
+M25
+G0 Z5
+G0 X32 Y202 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 3
+M25
+G0 Z5
+G0 X202 Y202 F3000
+G0 Z0
+M300 S440 P100
+M400
+; 
+; Position 4
+M25
+G0 Z5
+G0 X202 Y32 F3000
 G0 Z0
 M300 S440 P100
 M400
